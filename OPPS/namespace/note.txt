@@ -1,0 +1,9 @@
+name space ka use hum kisi file mai ek se jya same naam ka function ya class define karne kai liye karte hai.
+iske liye hum namespace naam ka keyword ka use karte hai.
+aur jis file mai code ko combine karna hota hai usme require keyword ka use karte hai.
+
+hum namespace ka aliasing bhi kar sakte hai.(name changing)
+
+example:
+**********
+use hello\hi\demo as cmd 

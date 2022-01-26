@@ -1,0 +1,18 @@
+jab hme kisi function ko bar bar kisi clas kai ander use karna hota hai to hum trets ka use karte hai. isase code ka size chhota ho jata hai.
+
+iske liye hme trait keyword ka use karna hota hai. aur jis class kai ander hme use karna hota hai hum vha pe use <traits_name > ka use karte 
+hai.
+
+example:
+
+traits <traist_name>
+{
+
+//some codes
+}
+
+
+
+agar hum same naam ka function class mai aur traits kai ander banate hai aur usko class kai under use karte hai to sabse jyada priortiy 
+class kai ander bne function ko di jati hai hai uske baad trait function ko aur uske bad base class ko di jati hai.
+

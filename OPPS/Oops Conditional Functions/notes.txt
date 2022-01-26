@@ -1,0 +1,23 @@
+oops conditional function ka use hum kisi condition ko check karne kai liye karte hai jaise ki 
+koi class exist karti hai ki nhi koi interface exist karta hai ki nhi. 
+ye do tarah ka value return karta hai true and false
+
+1 for true
+0 for false
+
+List of functions
+********************
+
+1) class_exists('class_name'): used for check class exstence
+
+2) interface_exists('interface_name'): used for check interface exstence
+
+3) method_exists($object_name,'class_name'): used for check method exstence
+
+4) trait_exists('trait_name') : used for check trait exstence
+
+5) property_exists('clas_name','property_name'): used for check property exstence
+
+6)is_a($object_name,'classname'): used for check object exstence of class
+
+7)is_subclass_of($obj,'parentClasses'): used for check subclass exstence of class

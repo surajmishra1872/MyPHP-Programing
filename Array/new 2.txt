@@ -1,0 +1,13 @@
+
+Bootstrap:- 
+---------
+Bootstrap is used to create responsive website and application.
+Bootstrap was developed by mark Otto and Jakon Thornton at twitter.
+
+Bootstrap was released in 2011(v1)
+latest version of bootstrap in bootstrap 5.
+bootstrap provides predefined classes.
+bootstrap is used to faster and easier web development.
+to use bootstrap firstly we have to link library of bootstrap.
+you can download library of bootstrap from getBootstrap.com
+it include HTML ,CSS and javascript.

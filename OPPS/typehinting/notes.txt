@@ -1,0 +1,6 @@
+Type hinting ka hum main use is liye karte hai ki code ko shi se execute karaya ja sake jisase ki code kai execution mai kam time lage. isme hum basically pahle hi data type ko define kar dete hai jisase code ander ja hi nhi pata aur code mai error ane kai chanche nhi hota hai
+
+matalab ki pahle hi data type decide kar dena ki kaun sa data type pass hoga kisi function mai kaun sa nhi.
+
+jaise kisi function mai agar object pass karna ho kisi specially class ka to hum 
+(class_name object_parameter variable ka use karte hai.)

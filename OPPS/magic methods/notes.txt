@@ -1,0 +1,74 @@
+magic methods:
+*****************  
+1.Made for special purpose
+2.start with __(double underscore) 
+3.call automatically when object created
+
+PHP Magic Methods List
+*****************************
+1) __construct()        		8) __clone()
+
+2) __destruct()			9) __sleep()
+
+3) __get()				10) __wakeup()
+
+4) __set()				11) __call()
+
+5)__isset()			12) __callStatic()
+
+6)__unset()			13) __toString()
+
+7)__autoload()			14) __invoke
+
+
+
+1) __construct()  : this is used for constructer it is called when object is created.
+
+2) __destruct() : it is called automatically after execution of program not matter how many line in program and how many times function call
+it run only one time in last.
+
+Note: constructer ad destructer ka best use database connection mai kar sakte hai jha automatic database connect hoga constructer mai 
+aur close hoga destructer mai.
+
+
+3)__autoload() :  Auto load function is used for include many other files in a single files when we use required are includes so 
+we can write Many lines for including other files.
+ instead of require and include we can use __autoload function which can autoload so many programs files is single files
+in this function we pass an argumenst who works as file carrier 
+When we make an object of class automatically call  auto load function .
+
+
+4) __get() : it is called automatically when we access not declared property or private property.
+we pass and argument inside this which return properties.(non-accessible user passed keys)
+
+5) __toString() or tostring(): hum kisi bhi object ko print nhi kra sakte agar print karana chahe to fatal error aati hai .
+in sab se bachne kai liye hum tostring ka function ka use karte hai jo ki object ko jaise hi print karne ki koshis ki jati hai automatic call ho
+jata hai. 
+
+6) __sleep() : is method ka use hum object kai value ko session ,database,file mai store kra sakte hai.
+iske liye hme pahle hme serialize function ka use karna hota hai jo ko objects ko array mai change kar deta hai aur automatically __sleep
+method ko call kar deta hai jo ki array value ko filter karne kai kaam aata hai.
+
+
+7) __wakeup() : yah function serialize function {sleep function}  kai dwara bne array to unserialize karne kai liye use hota hai.
+iske liye hum unserialize function ko use karte hai joki __wakeup function ko call akrta hai.
+
+8) __invoke() : jab hum kisi object ko function ki tarah call karte hai to fatal error aati hai. in sab se bachne kai liye hum invoke function ka use
+karte hai. ye kisi normal method ki tarah hi hota hai.
+
+9)  __clone() : is function ka use karke hum kisi bhi bject ka clone bna sakte hai matalab ki copy of object .jaise ki hum kisi class mai baar baar
+alag alag value pass karn chahte hai tab iska use karte hai. jab clone bnate hai to __ clone function  call hota hai uske liye clone keyword ka 
+use karna karna hota hai.
+
+10) __isset() : to check private or undefined property value is set or not.
+use isset function in object value.
+
+11) __unset(): to check private or undefined property value is unset or not.
+use unset function in object value.
+
+12) __call() : this is called when we try to access private or undefined function. it takes two parameter $method and $arg (this name is user 
+choice)
+
+13) __callStatic() : this is called when we try to access private or undefined static function.
+
+14)  __toString() : this is called when we try to print an object.

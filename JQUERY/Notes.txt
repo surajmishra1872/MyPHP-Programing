@@ -1,0 +1,289 @@
+short form of javascript functions and program.
+
+What is jQuery?
+jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.
+
+Basic Sytax:
+
+select id:
+document.getElementById("demo").innerText();
+In jquery: $('#id_name')
+
+document.getElementByClassName("demo").innerText();
+In jquery: $('#class_name')
+
+Jquery is Browser Independent
+
+include of js file
+
+1. File download
+2.CDN
+3.Under script tag
+
+Selector:-
+************
+
+1.Select all
+$("*")
+
+2.Inside Select
+$("ul li")
+
+3.multiple
+$(".abc,.xyz")
+
+4.multiple tag
+$("h1,div,p")
+
+5.first Select
+$("p:first") (only select first occurent one time)
+$("p:first") (select all ul last li element)
+
+6.last:select
+$("p:last")
+$("p:last-child") (select all ul last li element)
+
+7.select odd
+$("p:odd")
+
+8.select even
+$("p:even")
+
+
+Keyboard functions
+********************
+keypress
+keydown
+keyup
+
+mouse function:
+***************
+
+mouseenter
+mouseleave
+click
+dblclick
+contextmenu(right click)
+
+form functions:
+********************
+blur
+focus
+change
+select
+submit
+
+Window Functions
+*****************
+load (not support in new version)
+unload (not support in new version)
+resize
+scroll
+
+get and set:
+**************
+var a=$("#dv").val();
+
+set:
+*****
+$("#dv").val("suraj mishra");
+
+
+Adding ,Removing,Toggale Class 
+**************************************
+1.addClass()
+2.removeClass()
+3.toggleClass()
+
+Add Css Property
+*********************
+For Single Property
+1. .css("property name","value");
+
+For Multiple Property
+
+2. .css({"propert 1st":"value","propert 2nd":"value"});
+
+Append and Prepend
+***************************
+Prepend is used for adding element at the starting point inside the div of element
+
+Append is used for adding element at the end position inside the div or given element.
+
+After and Before
+*******************
+After is used for adding something outside(just after) of given selector.
+Before is used for adding something outside(just before) of given selector.
+
+Empty and Remove:
+***************************
+Empty Clear content of inside the given selector.
+Remove is used to remove (delete) given selector.
+
+appendTo and prependTo
+******************************
+Same as append and prepend
+only difference is that we pass first content then select the tag
+
+prependTo
+only difference is that we pass first content then select the tag
+
+Difference
+***********
+prependTo()
+$(content).prependTo(selector);
+
+prepend()
+$(selector).prepend(content);
+
+Clone:
+***********
+Clone is used to copy one object to another place
+
+Syntax:
+**********
+$("div").clone().appendTo("#box");
+
+replaceWith() and replaeceAll()
+************************************
+replaceWith() is used for replace the content and content to Tag tag to content
+
+replaceAll() is used for replace only tag to tag. isme hum pahle content dete hai phir select karte hai.
+
+
+wrapAll() and wrapInner():
+******************************
+wrapAll() is  used to wrap  all document from outside 
+wrapInner() is used to wrap element inside the tag
+
+height width:
+**************
+height() or set->height('400px')
+width()
+
+innerHeight()
+innerWidth()
+
+outerHeight()
+outerWidth()
+
+outerWidth(true)
+outerHeight(true)
+
+
+scrollTop() and scrollLeft()
+*******************************
+scrollTop() : side bar scroll bar
+
+scrollLeft() : bottom scroll bar
+
+we can use scroll function to call the automatic these functions
+
+hasClass(): 
+*************
+it is used for check given class is present or not
+it return true or false
+
+
+
+fadeIn fadeOut fadeToggle  fadeTo:
+****************************************
+
+fadeIn: this is used to show in faded form(in slow motion by using effect of opacity)
+fadeOut: this is used to hide in faded form(in slow motion by using effect of opacity)
+fadeToggle: this is used to show and hide  in faded form(in slow motion by using effect of opacity)
+fadeTo: this is used to show in faded form(in slow motion by using effect of opacity) but not hidden thre parameter time,opacity an 
+function(optional).
+
+
+show hide and toggle:
+*************************
+show : use for show
+hide: for hidden
+toggle : show->hide ,hide->show
+
+// $("#dv").show();
+           //$("#dv").show("slow");
+           //$("#dv").show("fast");
+
+ //$("#dv").hide();
+           // $("#dv").hide("slow");
+            //$("#dv").hide("fast");
+
+// $("#dv").toggle();
+            //$("#dv").toggle("slow");
+            //$("#dv").toggle("fast");
+
+
+in function formate:
+**************************
+  $("#dv").hide(3000,function(){
+                alert("Now it is hide");
+            });
+
+Animation:
+*************
+animation is used for animate the things
+animate function is used for them
+
+
+Stop:
+*********
+stop is used for stopped the animation just call stop()
+stop(true) : stop all animation
+
+method chaining:
+**********************
+method chaining is used for call multiple function at a same time.
+
+.slideUp().slideDown()
+
+
+pageX and pageY
+********************
+These functions return mouse positions. we call inside mousemove function.
+event.pageY and event.pageX
+
+each:
+*****
+this is work as loop
+
+
+event.type
+*************
+used for get which type of event occured
+click or hover etc
+
+event.which:
+*************
+which type of event occured eg:- mouse right button or left botton clicked
+
+
+event.targate
+****************
+to get html components names
+
+
+preventDefault:
+*******************
+This is used for stop the default working of things.
+like stop the working of link tag.
+
+isDefaultPrevented()
+*********************** it is used for check prevent is work or not.
+
+Propagation
+****************
+event.stopPropagation() : it is used for control on alert (one time to one)
+
+event.isPropagationStopped() : this is used for checking return two value true and false
+
+
+
+
+
+
+
+
+
+

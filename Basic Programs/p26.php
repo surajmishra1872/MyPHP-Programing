@@ -1,4 +1,4 @@
-<?php
+  <?php
 
 //working with strings
 
@@ -15,7 +15,7 @@ echo PHP_EOL;
 echo "Reverse  of string is:".strrev("suraj mishra");
 
 echo PHP_EOL;
-echo "Numbwer  of word in string is:".str_word_count("suraj mishra");
+echo "Number  of word in string is:".str_word_count("suraj mishra");
 
 echo PHP_EOL;
 echo "Position of 'mishra' in  given string is:".strpos("suraj mishra","mishra");

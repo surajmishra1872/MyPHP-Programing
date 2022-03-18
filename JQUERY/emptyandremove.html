@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="height: 200px;border: 5px solid black; width: 700px;margin:0px auto;">This is demo div <h1>
+        Hello this is  heading inside the div class.
+    </h1></div>
+   <center><button id="btn1">Empty</button>
+    <button id="btn2">Remove</button></center> 
+    <script src="jquery/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("div").empty();
+            });
+            $("#btn2").click(function(){
+                $("div h1").remove();
+            });
+        });
+    </script>
+</body>
+</html>

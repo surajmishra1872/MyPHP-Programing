@@ -24,8 +24,7 @@ abstract class demo1
 		$this->name=$n;
 		echo $this->name;
 	}
-	abstract function demofunc()
-	
+	abstract function demofunc();
 }
 
 class demo2 extends demo1
@@ -36,7 +35,7 @@ class demo2 extends demo1
 	}
 }
 
-$obj=new demo1("suraj");
+$obj=new demo2("suraj");
 $obj->demofunc();
 
 

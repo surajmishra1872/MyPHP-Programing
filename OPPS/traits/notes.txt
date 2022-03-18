@@ -5,7 +5,7 @@ hai.
 
 example:
 
-traits <traist_name>
+trait <traist_name>
 {
 
 //some codes

@@ -6,9 +6,7 @@ class test
 {
 	public $a;
 	public $b;
-	public $c;
-	
-	
+	public $c;	
 }
 
 #Object Creation

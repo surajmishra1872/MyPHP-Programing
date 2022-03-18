@@ -1,0 +1,103 @@
+What is session and cookie?
+***************************
+
+1. When ever we visit a website, we are asked to, accept the cookies..?
+
+    there are two states of website
+	1. loginned In
+		1. Item add to cart : user_id
+	2. Guest State.
+		2. Item Add to cart , wish List ---> Guest_id
+		
+		In order to uniquely Identify the user, 
+		server will store few information on your client(Browser)
+		This data stored in browser is stored in form cookie.
+		cookie is a small file stored in the Browser with some
+		data to identify the user uniquely, these information can be Anything.
+		
+2. What is session ?
+   *******************
+
+	session is a data that, can be encrypted or not, which stored on the 
+	server side rather than saving at cleint side.
+	
+	session works like token system, when users logs in any website
+	user is given a unique token of 14-digit (variable in length)
+	for a perticular time.(1440 seconds) 24 Minute.
+	
+	session will get stored in tmp folder for the server
+	sess_w2e3r4t5y64r1qw2 : filename
+		|
+		|..some data : serialised data. {data:i:1234|s:9:awnish}
+		
+	each time when user come, the server going to ask for token,
+	if token matched remain here, if not logged Out and will ask you
+	re-login and get the token(session) once the user is valid,
+	it will give one copy the token to you and other will be stored at server side one given to you will stored in the browser side cookie
+	called PHPSESSID.
+		
+Session is a type of transaction.
+Every Transaction has a start and end.
+session_start() : transaction start 
+Note, every time you deal, with session we have to set up
+transaction.
+if transaction is done
+we use session_destroy() : to End transaction.
+
+	sess_kc0mtb9p07p7e1a0hquoiufreg
+	PHPSESSID
+	
+How to set the session data 
+*****************************
+$_SESSION['key]='value';
+
+How to get the session data
+*****************************
+$varaible_name = $_SESSION['Key'];
+
+How to destroy the session
+**************************
+1. session_destroy() : destroys the session transaction,
+   file sess_id deleted from server tmp folder and cookie is 
+	also deleted.
+
+2. session_unset() : it unset the serialised data of the session_id
+3. unset() : delete the scope of the varaible from the memory.
+
+
+How can you change the php.ini without touching
+********************************************
+ini_set('key','value');
+for eg:
+session.name = 'PHPSESSID'
+ini_set('session.name','mysessionId');
+
+session.save_path = 'c:/laragon/tmp'
+ini_set('session.save_path','d:/xyz/tmp');
+
+session.type = 'files'
+ini_set('session.files','database');
+
+How to get encrypted Id:-
+session_id(); sess_kc0mtb9p07p7e1a0hquoiufreg
+kc0mtb9p07p7e1a0hquoiufreg
+
+How to regenerate session_id
+******************************
+session_regenerate_id() : renegrate the Id if stolen, 
+is attack session hijacking/session fixation.
+
+
+
+
+
+
+
+		
+		
+		
+		
+		
+		
+		
+	

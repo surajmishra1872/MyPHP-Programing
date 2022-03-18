@@ -11,7 +11,7 @@ class name
 
 function sun()
 {
-	echo"This function says Wake Up The Sun is risen...(hello page...)\n";
+    echo"This function says Wake Up The Sun is risen...(hello page...)\n";
 }
 
 ?>

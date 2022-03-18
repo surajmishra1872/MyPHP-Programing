@@ -6,6 +6,10 @@ class name
 	{
 		echo "this line print from constructer function automatiocally\n";
 	}
+	public function __construct()
+	{
+		echo "this line print from constructer function automatiocally 2 \n";
+	}
 	
 	public function suraj()
 	{

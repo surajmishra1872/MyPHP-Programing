@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="dv1" style="min-height: 200px;border: 5px solid black; width: 700px;margin:0px auto;">
+       <p>This is demo  Div tag Paragraph</p>
+        <h1>Hello this is  heading inside the div class.H1 </h1>
+        <h1>Hello this is  heading inside the div class.H2 </h1>
+        <h1>Hello this is  heading inside the div class. H3 </h1>
+        <h1>Hello this is  heading inside the div class . H4 </h1>
+    </div><br><br/>
+    
+   <center><br/><button id="btn1">Replace</button>
+    </center> 
+    <script src="jquery/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                //$("#dv1 h1").replaceWith("<h1>This is Replacement Heading</h1>");
+                $("<h2>This is heading two</h2>").replaceAll("#dv1 h1");
+            });
+        });
+    </script>
+</body>
+</html>

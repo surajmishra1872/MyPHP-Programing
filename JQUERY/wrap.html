@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="min-height: 200px;border: 5px solid black; width: 700px;margin:0px auto;">This is demo div <h1>
+        Hello this is  heading inside the div class.
+    </h1></div>
+    <p>This is heading 2</p>
+   <center><button id="btn1">wrapAll</button>
+    <button id="btn2">wrapInner</button></center> 
+    <script src="jquery/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("div h1").wrapAll("<span style='color:red;'></span>");
+            });
+            $("#btn2").click(function(){
+                $("p").wrapInner("<b></b>");
+            });
+        });
+    </script>
+</body>
+</html>
